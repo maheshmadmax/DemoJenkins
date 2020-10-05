@@ -37,6 +37,6 @@ node {
         kubernetesDeploy(
             configs: 'deployment.yaml',
             kubeconfigId: 'Kuberenetes-cluster',
-            enableConfigSubstitution: true
+            enableConfigSubstitution: true)
      }
 }
