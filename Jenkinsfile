@@ -35,7 +35,7 @@ node {
     }
      stage('Deploy Application in k8s'){
         kubernetesDeploy(
-            configs: 'deployment.yaml',
+            configs: 'deployment.yml',
             kubeconfigId: 'Kuberenetes-cluster',
             enableConfigSubstitution: true)
      }
