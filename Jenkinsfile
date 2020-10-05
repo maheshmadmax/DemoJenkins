@@ -33,10 +33,6 @@ node {
             app.push("latest")
         }
     }
-/*    stage('Run Docker Container'){
-       /* Running the image on production Environment */
-    *  sh label: '', script: 'docker run -p 8000:8000 maheshmadmax/hellonode &' 
-  } */
      stage('Deploy Application in k8s'){
         kubernetesDeploy(
             configs: 'deployment.yaml',
