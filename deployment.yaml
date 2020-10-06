@@ -34,4 +34,4 @@ spec:
       port: 8000
       targetPort: 8000
   externalIPs:
-    - 172.31.6.247
+    - 172.31.13.107
