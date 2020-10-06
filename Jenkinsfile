@@ -40,6 +40,7 @@ node {
   }
     
      stage('Deploy Application in k8s'){
+         agent{label 'slave'}
         kubernetesDeploy(
             configs: 'deployment.yaml',
             kubeconfigId: 'kubernetes-cluster',
